@@ -29,7 +29,6 @@ def start():
     mygtukas.place(relx=0.5, y=300, anchor=CENTER)
     zodziu_ikelimas()
     word = choice(words)
-    print(word)
     wordMix = sample(word, k=len(word))
     logger.info(f"Užduoties žodis:  {wordMix}")
     label1['text'] = 'Koks miestas čia užkoduotas?: '
@@ -45,7 +44,6 @@ def zodziu_ikelimas():
     data = failas.read()
     words = data.split("\n")
     logger.warning(f"Žodzių sarašas įkeltas")
-    print(words)
 
 
 def check():

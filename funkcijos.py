@@ -22,7 +22,6 @@ def logu_skaitymas():
                                                       encoding="UTF-8") as readme:  # išsiaiškinti koduotę
         tekstas = failas.read()
         readme.write(tekstas)
-        print(tekstas)
 
     sbar = Scrollbar(langas1, orient=VERTICAL)
     sbar.pack(side=RIGHT, fill='y')
